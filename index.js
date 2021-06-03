@@ -9,9 +9,18 @@ const child = document.querySelector('.child');
 // });
 
 // Default (Bubbling)
-// grandparent.addEventListener('click', (e) => {
-//   console.log("grandparent");
-// });
+grandparent.addEventListener('click', (e) => {
+  console.log("grandparent");
+});
+
+
+// const onClickFunc = (event) => {
+//   console.log("grandparent onclick");
+// };
+
+// grandparent.onclick = onClickFunc;
+
+// grandparent.onclick = null;
 
 // parent.addEventListener('click', (e) => {
 //   console.log("parent");
@@ -82,13 +91,13 @@ const child = document.querySelector('.child');
 //   })
 // });
 
-const newDiv = document.createElement('div');
-newDiv.classList.add('new-div');
-document.body.appendChild(newDiv)
+// const newDiv = document.createElement('div');
+// newDiv.classList.add('new-div');
+// document.body.appendChild(newDiv)
 
-// Delagation
-document.addEventListener('click', (e) => {
-  if (e.target.matches('div')) {
-    console.log('div clicked');
-  }
-});
+// // Delagation
+// document.addEventListener('click', (e) => {
+//   if (e.target.matches('div')) {
+//     console.log('div clicked');
+//   }
+// });
